@@ -9,70 +9,45 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-.menu .center {
+.menu {
     text-align: center;
     justify-content: center;
-  }
+    margin: 39px;
+}
 
-.menu div img {
-    margin-top: 10px;
+.menu img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 100%;
+
 }
 
-.menu div ul {
-    overflow: hidden;
-    margin-top: 1em;
-    margin-left: o auto;
-    margin-right: 0 auto;
+.menu p {
+    color: white;
+    margin: 12px;
 }
-.menu div ul li {
+
+.menu ul {
+    margin: 12px;
+}
+
+.menu ul li {
     list-style: none;
+}
+
+.menu ul li a {
     text-align: center;
-    justify-content: center;
-    background: linear-gradient(302deg, #ff0000, #00ff29, #007aff);
-    background-size: 600% 600%;
-    -webkit-animation: button 18s ease infinite;
-    -o-animation: button 18s ease infinite;
-    animation: button 18s ease infinite;
-    margin: 17px;
-    border-radius: 30px;
-    border: 2px solid white;
-    transition: box-shadow 2s, padding 2s;
-    overflow: hidden;
-    padding: 17px;
-}
-
-.menu div ul li:hover {
-    
-    box-shadow: 0 0 10px floralwhite;
-}
-
-.menu div ul li a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    font-weight: 500px;
+    letter-spacing: 4px;
     text-decoration: none;
-    font-size: large;
-    color: rgb(255, 255, 255);
-}
-
-@-webkit-keyframes button {
-    0%{background-position:0% 57%}
-    50%{background-position:100% 44%}
-    100%{background-position:0% 57%}
-}
-@-o-keyframes button {
-    0%{background-position:0% 57%}
-    50%{background-position:100% 44%}
-    100%{background-position:0% 57%}
-}
-@keyframes button {
-    0%{background-position:0% 57%}
-    50%{background-position:100% 44%}
-    100%{background-position:0% 57%}
+    transition: 0.3s ease-in-out;
+    justify-self: start;
+    color: #fff;
+    border-radius: 100px;
+    border: 2px solid white;
 }
