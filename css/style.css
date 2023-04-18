@@ -10,8 +10,8 @@ body {
 }
 
 .menu {
+    overflow: hidden;
     text-align: center;
-    justify-content: center;
     margin: 39px;
 }
 
@@ -19,7 +19,11 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(130, 130, 130);
+    box-shadow: 0 0 130px rgb(92, 92, 92);
+    cursor: url('https://img.icons8.com/color/48/null/minecraft-shovel.png');
 }
 
 .menu p {
@@ -28,26 +32,60 @@ body {
 }
 
 .menu ul {
+    overflow: hidden;
+    display: inline-block;
     margin: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul li {
+    margin: 30px;
     list-style: none;
+    margin-top: 3px;
+    padding: 10px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-radius: 100px;
+    border: 2px solid white;
+    cursor: pointer;
 }
 
 .menu ul li a {
-    text-align: center;
-    display: inline-block;
-    margin-top: 22px;
-    padding: 10px;
-    background: transparent;
-    color: #fff;
-    font-weight: 500px;
-    letter-spacing: 4px;
+    overflow: hidden;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
-    justify-self: start;
-    color: #fff;
-    border-radius: 100px;
-    border: 2px solid white;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    transition: box-shadow 2s;
+}
+.menu ul li a:hover {
+    transition: 0.6s;
+    color: gray;
+    text-shadow: 0 2px 20px rgb(19, 169, 214);
+
+}
+.menu ul li:hover {
+    transition: 2s;
+    box-shadow: 0 8px  20px rgb(19, 169, 214);
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+    
+    
+    .menu ul li {
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 2px solid white;
+    }
+    
+
 }
