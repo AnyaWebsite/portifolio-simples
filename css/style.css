@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.menu .center {
+    text-align: center;
+    justify-content: center;
+  }
+
+.menu div img {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.menu div ul {
+    overflow: hidden;
+    margin-top: 1em;
+    margin-left: o auto;
+    margin-right: 0 auto;
+}
+.menu div ul li {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(302deg, #ff0000, #00ff29, #007aff);
+    background-size: 600% 600%;
+    -webkit-animation: button 18s ease infinite;
+    -o-animation: button 18s ease infinite;
+    animation: button 18s ease infinite;
+    margin: 17px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: box-shadow 2s, padding 2s;
+    overflow: hidden;
+    padding: 17px;
+}
+
+.menu div ul li:hover {
+    
+    box-shadow: 0 0 10px floralwhite;
+}
+
+.menu div ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+@-webkit-keyframes button {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-o-keyframes button {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@keyframes button {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
